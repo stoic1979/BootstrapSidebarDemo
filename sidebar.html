@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href='sidebar.css' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"></head>
+    <body>
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav" style="margin-left:0;">
+                    <li class="sidebar-brand"></li>
+                    <li>
+                        <a href="#"><i class="glyphicon glyphicon-home " aria-hidden="true"> </i> <span style="margin-left:10px;">Home</span>  </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="glyphicon glyphicon-stats " aria-hidden="true"> </i> <span style="margin-left:10px;">Reports</span>  </a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-sort-alpha-asc " aria-hidden="true"> </i> <span style="margin-left:10px;">Section</span>  </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-play-circle-o " aria-hidden="true"> </i> <span style="margin-left:10px;"> Section</span> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-puzzle-piece" aria-hidden="true"> </i> <span style="margin-left:10px;">Components</span> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-font" aria-hidden="true"> </i> <span style="margin-left:10px;">Section</span> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="glyphicon glyphicon-question-sign" aria-hidden="true"> </i> <span style="margin-left:10px;">Issues</span> </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-info-circle " aria-hidden="true"> </i> <span style="margin-left:10px;">Backlogs</span> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-comment-o" aria-hidden="true"> </i> <span style="margin-left:10px;">Messages</span> </a>
+                    </li>
+                    <a href="#menu-toggle"  id="menu-toggle" style=";float:right; color: white;">
+                        <i class="fa fa-angle-double-left" style="font-size:20px !Important;" aria-hidden="true"></i>
+                    </a>  
+                </ul>
+            </div>
+        </div><!-- Sidebar -->
+
+        <!-- /#wrapper -->
+        <script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $(this).find('i').toggleClass('fa fa-angle-double-left').toggleClass('fa fa-angle-double-right');
+    $("#wrapper").toggleClass("toggled");
+});
+        </script>
+    </body>
+</html>
